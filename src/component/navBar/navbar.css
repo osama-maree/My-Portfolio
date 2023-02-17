@@ -1,0 +1,114 @@
+.mynavbar {
+  display: flex;
+  justify-content: space-evenly;
+}
+.text-white {
+  display: none;
+}
+@media screen and (max-width: 824px) {
+  .mynavbar .first-items {
+    display: none !important;
+  }
+}
+
+.mynavbar .items {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 40%;
+}
+@media screen and (min-width: 768px) and (max-width: 1235px) {
+  .mynavbar .items {
+    width: 60%;
+  }
+}
+
+.btn-primary {
+  background-color: black;
+  color: white;
+  animation-name: change;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  transition: transform 0.5s ease-in-out;
+}
+.mynavbar .first-items {
+  height: 50px;
+  width: 50px;
+  transition: 1s ease-in-out;
+}
+
+.mynavbar .first-items img {
+  object-fit: cover;
+  border-radius: 50%;
+  cursor: pointer;
+  animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.btn-primary:hover {
+  transform: translate3d(10px, 10px, 0px);
+  border: 3px teal solid;
+}
+.mynavbar .first-items:hover {
+  transform: rotate(-180deg);
+  border: #eeee 4px solid;
+  border-radius: 50%;
+}
+@media screen and (min-width: 400px) and (max-width: 823px) {
+  .mynavbar .items {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .iitem {
+    width: 40%;
+  }
+  .btn-primary {
+    width: 100%;
+  }
+  .btn-primary:hover {
+    transform: rotate(0deg);
+  }
+}
+@media screen and (max-width: 399px) {
+  .mynavbar .items {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .iitem {
+    width: 70px;
+  }
+  .btn-primary {
+    width: 100%;
+    font-size: 7px;
+    font-weight: normal;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn-primary:hover {
+    transform: rotate3d(0px, 0px, 0px);
+  }
+}
+@keyframes change {
+  from {
+    background-color: black;
+    color: white;
+  }
+  to {
+    background-color: white;
+    color: black;
+  }
+}
+

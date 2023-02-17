@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+.card {
+  background: rgba(255, 255, 255, 0.11);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.6px);
+  -webkit-backdrop-filter: blur(2.6px);
+  border: 1px solid rgba(255, 255, 255, 0.01);
+  border: 1px solid white;
+}
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.form-label {
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.myimgg {
+  border-radius: 10px;
+  opacity: 70%;
+}
+.myhe {
+  background-color: #000;
+  color: white;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+
+.content {
+  display: block;
+  background: #fff;
+  border-radius: 80px;
+  border-bottom: 5px solid #ccd1d9;
+}
+
+.content .mypP {
+  font-family: Oswald;
+  font-size: 2rem;
+  animation: Color 4s linear infinite;
+  -webkit-animation: Color 2s ease-in-out alternate-reverse infinite;
+  text-shadow: 10px 10px #f0f0f0;
+}
+
+@keyframes Color {
+  0% {
+    color: #a0d468;
+  }
+
+  20% {
+    color: #4fc1e9;
+  }
+
+  40% {
+    color: #ffce54;
+  }
+
+  60% {
+    color: #fc6e51;
+  }
+
+  80% {
+    color: #ed5565;
+  }
+
+  100% {
+    color: #ac92ec;
+  }
+}
+
+@-moz-keyframes Color {
+  0% {
+    color: #a0d468;
+  }
+
+  20% {
+    color: #4fc1e9;
+  }
+
+  40% {
+    color: #ffce54;
+  }
+
+  60% {
+    color: #fc6e51;
+  }
+
+  80% {
+    color: #ed5565;
+  }
+
+  100% {
+    color: #ac92ec;
+  }
+}
+
+@-webkit-keyframes Color {
+  0% {
+    color: #a0d468;
+  }
+
+  20% {
+    color: #4fc1e9;
+  }
+
+  40% {
+    color: #ffce54;
+  }
+
+  60% {
+    color: #fc6e51;
+  }
+
+  80% {
+    color: #ed5565;
+  }
+
+  100% {
+    color: #ac92ec;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .content .mypP {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 230px) {
+  .content .mypP {
+    font-size: 0.5rem;
+  }
+}

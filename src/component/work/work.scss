@@ -1,0 +1,43 @@
+
+.mydes{
+    color:white;
+    font-size:1.5rem;
+    position: absolute;
+    left: 10%;
+    font-family: 'Julius Sans One', sans-serif;
+    
+
+/* From https://css.glass */
+background: rgba(111, 70, 70, 0.28);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(6.7px);
+-webkit-backdrop-filter: blur(6.7px);
+border: 2px solid gray;
+}
+
+.myimgg{
+    border-radius: 20px;
+   
+}
+.conts{
+    position: relative;
+    
+}
+.abb1{
+    z-index: 3;
+    color: white;
+    background: #000;
+    position: absolute;
+   
+    left: 50%;
+    top:50% !important;
+}
+.boxx{
+    background-color: #000;
+    transition: 3s;
+    border-radius: 15px;
+}
+.boxx:hover{
+    margin-bottom: 30px;
+}

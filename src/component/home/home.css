@@ -1,0 +1,71 @@
+
+.img-fluid {
+  object-fit: cover;
+  clip-path: polygon(
+    39% 13%,
+    71% 9%,
+    93% 23%,
+    97% 78%,
+    80% 100%,
+    23% 94%,
+    11% 74%,
+    21% 31%
+  );
+  background-color: red;
+  opacity: 65%;
+  transition: 2s;
+  cursor: pointer;
+  animation: rotatee 2s ease-in-out infinite;
+  animation-direction: alternate;
+}
+
+
+@keyframes rotatee {
+  0% {
+    transform: translateX(0px);
+    opacity: 90%;
+  }
+  100% {
+    transform: translateX(15px);
+    opacity: 60%;
+  }
+}
+.col-md-7{
+color: #eee;
+align-items: center;
+}
+.col-md-7 .mypar{
+background: rgba(0, 0, 0, 0.32);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(4.4px);
+-webkit-backdrop-filter: blur(4.4px);
+border: 1px solid rgba(0, 0, 0, 0.11);
+     font-size: 1.1rem;
+     color: #eeee;   
+}
+h2{
+    background: rgba(227, 192, 192, 0.34);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(4.4px);
+-webkit-backdrop-filter: blur(4.4px);
+border: 1px solid rgba(227, 192, 192, 0.11);
+
+}
+.mycard-update{
+    background: rgba(130, 121, 121, 0.46);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(2.2px);
+-webkit-backdrop-filter: blur(2.2px);
+border: 1px solid rgba(130, 121, 121, 0.78);
+width: 40%;
+}
+@media screen and (max-width:400px) {
+    .mycard-update{
+        width: 90% !important;
+        text-align: center;
+    }
+    
+}
