@@ -18,7 +18,7 @@ const Work = () => {
       link1: "https://github.com/osama-maree/Auth.git",
       img: "/assets/auth2.png",
       title: "full stack authentication",
-      desc: "Simple authentication I use nodejs,reactjs,sequlizeORM,expressjs,verify real your email,and send code and reset password and etc...",
+      desc: "full stack authentication I use nodejs,reactjs,MongoDB,expressjs,verify real your email,and send code and reset password and etc...",
       link: "https://github.com/osama-maree/Auth.git",
       id: 2,
     },
@@ -89,6 +89,14 @@ const Work = () => {
       link: "https://github.com/osama-maree/Social-Media-App.git",
       id: 10,
     },
+    {
+      link1: "https://gorgeous-croquembouche-6d4efe.netlify.app/",
+      img: "/assets/type.png",
+      title: "Todo list",
+      desc: "I have used typescript in this application",
+      link: "https://github.com/osama-maree/todo_typeScipt.git",
+      id: 11,
+    },
   ];
 
   const TextRef = useRef();
@@ -124,24 +132,22 @@ const Work = () => {
           >
             {content.map((item, index) => {
               return (
-               
-                  <a href={item.link1} key={index}>
-                    <MDBCarouselItem
-                      className="w-100 d-block myimgg"
-                      itemId={item.id}
-                      src={item.img}
-                      alt="..."
-                    >
-                      <div className="boxx py-2 pt-3">
-                        <h5> {item.title}</h5>
-                        <p>{item.desc}</p>
-                        <a href={item.link} className="btn btn-success">
-                          See source Code
-                        </a>
-                      </div>
-                    </MDBCarouselItem>
-                  </a>
-               
+                <a href={item.link1} key={index}>
+                  <MDBCarouselItem
+                    className="w-100 d-block myimgg"
+                    itemId={item.id}
+                    src={item.img}
+                    alt="..."
+                  >
+                    <div className="boxx py-2 pt-3">
+                      <h5> {item.title}</h5>
+                      <p>{item.desc}</p>
+                      <a href={item.link} className="btn btn-success">
+                        See source Code
+                      </a>
+                    </div>
+                  </MDBCarouselItem>
+                </a>
               );
             })}
           </MDBCarousel>
