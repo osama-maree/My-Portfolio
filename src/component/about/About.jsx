@@ -5,7 +5,7 @@ const About = () => {
     <div className="container">
       <div className="block mt-5 mb-3 p-4">
         <div className="row">
-          <div className="col-md-5">
+          <div className="col-md-5 d-flex">
             <img
               src="/assets/about.jpg"
               className="img-fluid"
@@ -34,7 +34,7 @@ const About = () => {
               programming.
               <br /> <br />
               <span className="text-info fw-bold">-- </span>I also previously
-              provided a free C Plus Plus course and uploaded it to the YouTube
+              provided a free C++ course and uploaded it to the YouTube
               platform.
               <br /> <br />
               <span className="text-info fw-bold">-- </span>Acquire the skill of

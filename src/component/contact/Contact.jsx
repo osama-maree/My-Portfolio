@@ -65,7 +65,7 @@ const Contact = () => {
                   <Form.Label htmlFor="name">Name</Form.Label>
                   <Form.Control
                     id="name"
-                    placeholder="please enter your email"
+                    placeholder="please enter your name"
                     type="text"
                     name="to_name"
                   />

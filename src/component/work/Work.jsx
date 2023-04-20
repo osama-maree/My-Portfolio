@@ -10,7 +10,7 @@ const Work = () => {
       link1: "https://jovial-semifreddo-39e198.netlify.app",
       img: "/assets/auth3.png",
       title: "full stack authentication",
-      desc: "Simple authentication I use nodejs,reactjs,firebase,expressjs",
+      desc: "Simple authentication I use reactjs,firebase",
       link: "https://github.com/osama-maree/firebase.git",
       id: 1,
     },
