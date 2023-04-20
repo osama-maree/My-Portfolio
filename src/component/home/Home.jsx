@@ -10,7 +10,7 @@ const Home = () => {
         </div>
         <div className="col-md-7 mt-5">
           <h2 className="mb-5 ms-4 mt-5 fw-bold text-center py-3">
-            My Name<span className="text-secondary"> : </span>OSAMA MA
+            My Name<span className="text-secondary"> : </span>OSAMA M
             <span className="text-success">REI</span>
           </h2>
           <p className="mypar card-text ms-4 mt-5 mb-5 p-4">
